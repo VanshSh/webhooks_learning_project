@@ -11,6 +11,7 @@ const PORT = 3000
 app.post('/purchase', async (req, res) => {
   // Simulate payment processing
   await new Promise((resolve) => setTimeout(resolve, 2000))
+  console.log('😇 L-14 in service1.js=> ', 'Received order')
 
   // Trigger webhook to Service 2
   try {
